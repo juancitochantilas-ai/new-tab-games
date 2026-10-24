@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Tab Games</title>
+<style>
+body {
+  margin: 0;
+  background: #10131c;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px 16px;
+}
+h1 { margin-top: 60px; font-size: 38px; }
+input {
+  width: 85%;
+  max-width: 500px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid #555;
+  background: #202636;
+  color: white;
+  font-size: 16px;
+}
+.games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 600px;
+  margin: 35px auto;
+}
+a {
+  background: #222b40;
+  color: white;
+  padding: 25px 8px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover { background: #394b70; }
+</style>
+</head>
+<body>
+<h1>🎮 New Tab</h1>
+<p>Your gaming corner</p>
+<input id="search" placeholder="Search games..."
+onkeydown="if(event.key==='Enter'){let q=this.value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(q),'_blank')}">
+<div class="games">
+<a href="https://www.coolmathgames.com/" target="_blank">🎯 Coolmath Games</a>
+<a href="https://poki.com/" target="_blank">🕹️ Poki</a>
+<a href="https://www.mathplayground.com/" target="_blank">🧩 Math Playground</a>
+<a href="https://www.google.com/" target="_blank">🌐 Google</a>
+</div>
+<p>Choose a game and have fun!</p>
+</body>
+</html>
